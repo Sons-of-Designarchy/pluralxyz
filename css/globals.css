@@ -35,9 +35,33 @@ body {
   margin: auto;
 }
 
-/* utils */
+/* Utils */
 
 .display-text {
-  font-size: 28.5rem;
+  font-size: 10rem;
   text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 37.5rem) {
+  /* Styles for smaller mobile devices */
+}
+
+@media screen and (min-width: 48.0625rem) {
+  /* Styles for tablets and small laptops */
+  .display-text {
+    font-size: 20rem;
+  }
+}
+
+@media screen and (min-width: 64.0625rem) {
+  /* Styles for laptops and desktops */
+  .display-text {
+    font-size: 28.5rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  /* Styles for high-resolution displays */
 }
