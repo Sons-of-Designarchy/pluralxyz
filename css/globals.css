@@ -30,38 +30,55 @@ body {
   color: var(--orange-500);
 
   text-transform: uppercase;
+}
 
-  max-width: var(--max-width);
+.container {
+  width: --var(--max-width);
   margin: auto;
+  padding: 1rem;
+
+  overflow: hidden;
 }
 
 /* Utils */
 
 .display-text {
-  font-size: 10rem;
   text-align: center;
 }
 
 /* Media Queries */
 
-@media screen and (min-width: 37.5rem) {
-  /* Styles for smaller mobile devices */
+@media screen and (min-width: 20em) {
+  /* Styles for mobile devices */
+  .display-text {
+    font-size: 6rem;
+  }
 }
 
-@media screen and (min-width: 48.0625rem) {
-  /* Styles for tablets and small laptops */
+@media screen and (min-width: 22em) {
+  /* Styles for mobile devices */
+  .display-text {
+    font-size: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  /* Styles for medium devices such as tablets */
+  .display-text {
+    font-size: 14rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /* Styles for large devices such as laptops */
   .display-text {
     font-size: 20rem;
   }
 }
 
-@media screen and (min-width: 64.0625rem) {
-  /* Styles for laptops and desktops */
+@media screen and (min-width: 80em) {
+  /* Styles for the largest devices (1024px and up) */
   .display-text {
     font-size: 28.5rem;
   }
-}
-
-@media screen and (min-width: 90rem) {
-  /* Styles for high-resolution displays */
 }
