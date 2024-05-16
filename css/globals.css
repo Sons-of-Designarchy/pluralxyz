@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'ApercuMono';
+  src: url('../fonts/apercu-mono-regular-pro.ttf');
+}
+
+@font-face {
+  font-family: 'Bigilla';
+  src: url('../fonts/Bigilla-Bold.otf');
+}
+
+:root {
+  --blue-500: rgba(3, 3, 190);
+  --orange-500: rgba(247, 147, 31);
+
+  --primary-font: 'Bigilla', sans-serif;
+  --secondary-font: 'ApercuMono', sans-serif;
+
+  --max-width: 1500px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+
+  background: var(--blue-500);
+  color: var(--orange-500);
+
+  text-transform: uppercase;
+
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+/* utils */
+
+.display-text {
+  font-size: 28.5rem;
+  text-align: center;
+}
