@@ -64,13 +64,14 @@ header {
 
   font-size: 2rem;
 
-  div > img {
-    height: 800px;
-    max-width: 500px;
-  }
+  .col-image {
+    display: flex;
+    justify-content: center;
 
-  svg {
-    width: auto;
+    img {
+      height: 800px;
+      max-width: 500px;
+    }
   }
 }
 
@@ -92,6 +93,7 @@ header {
 @media screen and (min-width: 64em) {
   /* Styles for large devices such as laptops (1024px and up) */
   .intro-grid {
+    display: grid;
     padding: 4rem 0;
     gap: 8rem;
     grid-template-columns: repeat(12, 1fr);
@@ -116,15 +118,23 @@ header {
   .col:nth-child(4) {
     grid-column: span 4;
     grid-row: span 3;
+
+    text-align: end;
+    align-content: center;
   }
 
   .col:nth-child(5) {
-    grid-column: 2 / 7;
+    grid-column: 3 / 7;
     grid-row: 4 / 5;
   }
 
   .col:nth-child(6) {
     grid-column: 7 / 11;
+
+    font-size: 3.5rem;
+    text-align: end;
+
+    align-content: space-between;
   }
 
   .col:nth-child(7) {
@@ -132,8 +142,11 @@ header {
   }
 
   .col:nth-child(8) {
+    font-size: 3.5rem;
+    align-content: center;
+
     grid-row: 5 / 6;
-    grid-column: 2 / 7;
+    grid-column: 3 / 7;
   }
 }
 
