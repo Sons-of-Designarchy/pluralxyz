@@ -83,6 +83,10 @@ header {
 
   font-family: var(--secondary-font);
 
+  img {
+    display: none;
+  }
+
   p {
     text-align: center;
     line-height: 3rem;
@@ -228,6 +232,18 @@ header {
 
     .col:nth-child(7) {
       grid-column: 7 / 11;
+    }
+  }
+
+  .closing {
+    gap: 4.5rem;
+
+    img {
+      display: block;
+    }
+
+    p {
+      line-height: 3rem;
     }
   }
 }
