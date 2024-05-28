@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: 500px;
   margin: auto;
   padding: 1rem;
 
@@ -56,6 +56,45 @@ header {
 
   border-bottom: 1px solid var(--orange-500);
   padding-bottom: 1rem;
+
+  nav {
+    order: 2;
+  }
+
+  svg {
+    order: 1;
+  }
+
+  img {
+    order: 3;
+  }
+
+  p {
+    order: 4;
+  }
+}
+
+nav {
+  font-family: var(--secondary-font);
+  padding: 0 1rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+  }
+
+  ul li:not(:last-child) {
+    &::after {
+      content: '/';
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--orange-500);
+  }
 }
 
 .intro-grid {
@@ -65,20 +104,6 @@ header {
   padding: 1em 0;
 
   font-size: 2rem;
-
-  .col-image {
-    display: flex;
-    justify-content: center;
-
-    img,
-    video {
-      min-width: 400px;
-      min-height: 500px;
-
-      max-height: 1000px;
-      max-width: 500px;
-    }
-  }
 
   .col:nth-child(3) {
     text-align: end;
@@ -157,8 +182,31 @@ header {
 @media screen and (min-width: 48em) {
   /* Styles for large devices such as laptops (1024px and up) */
 
+  nav {
+    max-width: var(--max-width);
+  }
+
+  header {
+    nav {
+      order: 1;
+    }
+
+    svg {
+      order: 2;
+    }
+
+    img {
+      order: 3;
+    }
+
+    p {
+      order: 4;
+    }
+  }
+
   .container {
     padding: 2rem;
+    max-width: var(--max-width);
   }
 
   .intro-grid {
