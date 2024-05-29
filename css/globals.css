@@ -74,7 +74,7 @@ header {
 
 nav {
   font-family: var(--secondary-font);
-  padding: 0 1rem;
+  width: 100%;
 
   ul {
     list-style: none;
@@ -244,6 +244,7 @@ nav {
 
   nav {
     max-width: var(--max-width);
+    padding: 1rem 0;
   }
 
   header {
