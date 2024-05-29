@@ -66,6 +66,7 @@ header {
   img {
     order: 3;
     height: 20rem !important;
+    mix-blend-mode: screen;
   }
 
   p {
@@ -420,6 +421,7 @@ nav {
 
     img {
       display: block;
+      mix-blend-mode: screen;
     }
 
     p {
