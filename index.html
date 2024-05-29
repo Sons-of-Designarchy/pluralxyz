@@ -9,6 +9,12 @@
 </head>
 
 <body>
+ <section class="modal">
+  <div class="modal-inner">
+   <button onclick="closeModal()">Cerrar / X</button>
+   <div class="modal-video-container"></div>
+  </div>
+ </section>
  <main class="container">
   <header>
    <nav>
@@ -55,9 +61,14 @@
     Se prende y enciende
    </p>
    <div class="col col-image">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/AreWeAlone.mp4" type="video/mp4">
-     </source>
+    <div onclick="openModal('https://www.youtube.com/embed/RCt_K7lh89U?si=3xDJOD9FKuGvQcLr')">
+     <div class="video-overlay">
+      <p>Play →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/Ritual.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
    <p class="col">
     Vuélvete <br />
@@ -67,7 +78,7 @@
    <div class="col">
     <p>
      cae la noche <br />
-     vuélvete un espíritu
+     vuélvete un espírituw
     </p>
     <br />
     <p>
@@ -77,10 +88,15 @@
    </div>
 
    <div class="col col-image">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/Renacer.mp4" type="video/mp4">
-     </source>
-    </video>
+    <div onclick="openModal('https://www.youtube.com/embed/t5F0RbrcHso?si=aS74fe7GLXn-smhF')">
+     <div class="video-overlay">
+      <p>Renacer - 2023</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/Renacer.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
    <div class="col">
     <svg xmlns="http://www.w3.org/2000/svg" width="204" height="200" viewBox="0 0 204 200" fill="none">
@@ -903,9 +919,15 @@
     </p>
    </div>
    <div class="col col-image">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/Silencio.mp4" type="video/mp4" />
-    </video>
+    <div onclick="openModal('https://www.youtube.com/embed/juv22JWV2_U?si=IGAsp51OG9ZmBeoX')">
+     <div class="video-overlay">
+      <p>Silencio - 2023</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/Silencio.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
    <div class="col">
     <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none" class="">
@@ -940,20 +962,38 @@
     FOLLOW ME <br />
     - COLLAB CON <br /> LUMINOIZE
    </p>
-   <div class="col col-img">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/FollowMe.mp4" type="video/mp4" />
-    </video>
+   <div class="col col-image">
+    <div onclick="openModal('https://www.youtube.com/embed/WRkovQlh35g?si=qs3EzPGZNcstR4-y')">
+     <div class="video-overlay">
+      <p>Follow Me</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/FollowMe.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
-   <div class="col col-img">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/Bionica.mp4" type="video/mp4" />
-    </video>
+   <div class="col col-image">
+    <div onclick="openModal('https://www.youtube.com/embed/R3ep_iv_n6o?si=n9MrC8VvJtgxFMFe')">
+     <div class="video-overlay">
+      <p>Bionica</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/Bionica.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
-   <div class="col col-img">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/AreWeAlone.mp4" type="video/mp4" />
-    </video>
+   <div class="col col-image">
+    <div onclick="openModal('https://www.youtube.com/embed/70LvZwMUL9Q?si=jdiL4HQUrhx4T3Vf')">
+     <div class="video-overlay">
+      <p>Are We Alone - 2023</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/AreWeAlone.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
    <div class="col">
     <svg xmlns="http://www.w3.org/2000/svg" width="137" height="137" viewBox="0 0 137 137" fill="none">
@@ -972,15 +1012,27 @@
       stroke="#F7931F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
    </div>
-   <div class="col col-img">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/Tempo(NightMix).mp4" type="video/mp4" />
-    </video>
+   <div class="col col-image">
+    <div onclick="openModal('https://www.youtube.com/embed/0biu1ObbERg?si=SgKBtnBIIWlaRhz0')">
+     <div class="video-overlay">
+      <p>Tempo (Night Mix)</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/Tempo(NightMix).mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
    <div class="col col-image">
-    <video playsinline autoplay muted loop>
-     <source src="./videos/Tempo.mp4" type="video/mp4" />
-    </video>
+    <div onclick="openModal('https://www.youtube.com/embed/vzFweAk2pHw?si=vAq3l0OuzdUEcrQx')">
+     <div class="video-overlay">
+      <p>Tempo</p>
+      <p>Play Video →</p>
+     </div>
+     <video playsinline autoplay muted loop>
+      <source src="./videos/Tempo.mp4" type="video/mp4">
+      </source>
+    </div>
    </div>
   </section>
   <section class="closing">
@@ -1012,6 +1064,7 @@
    </p>
   </section>
  </main>
+ <script src="./scripts.js"></script>
 </body>
 
 </html>
