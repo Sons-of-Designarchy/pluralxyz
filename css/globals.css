@@ -159,7 +159,7 @@ nav {
 .mid-grid {
   display: grid;
   font-size: 3rem;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-template-columns: 1fr;
 
   svg {
@@ -179,8 +179,7 @@ nav {
 .closing {
   display: flex;
   flex-direction: column;
-  gap: 4.5rem;
-  padding: 4rem 0;
+  gap: 3.5rem;
 
   font-family: var(--secondary-font);
 
@@ -196,15 +195,24 @@ nav {
 
 .collab-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 
   font-size: 3rem;
 
   padding: 4rem 0;
 
   .col:has(svg) {
+    padding: 2rem;
     display: flex;
     justify-content: center;
+  }
+
+  .col:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .col:first-child {
+    margin-bottom: 3rem;
   }
 
   svg {
@@ -383,6 +391,14 @@ nav {
       max-width: 100%;
     }
 
+    .col:first-child {
+      margin-bottom: 0;
+    }
+
+    .col:nth-child(2) {
+      grid-row: 2;
+    }
+
     .col:nth-child(4) {
       align-self: end;
     }
@@ -400,7 +416,7 @@ nav {
   }
 
   .closing {
-    gap: 4.5rem;
+    gap: 6rem;
 
     img {
       display: block;
