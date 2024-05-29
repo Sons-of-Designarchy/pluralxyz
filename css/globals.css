@@ -33,7 +33,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin: auto;
   padding: 1rem;
 
@@ -131,8 +130,6 @@ nav {
   position: relative;
   cursor: pointer;
   height: 600px;
-  min-width: 350px;
-  max-width: 500px;
   width: 100%;
   overflow: hidden;
 
@@ -153,9 +150,21 @@ nav {
   padding: 1em 0;
 
   font-size: 2rem;
+
+  .col:nth-child(4) {
+    text-align: center;
+  }
 }
 
 .mid-grid {
+  font-size: 2rem;
+  svg {
+    display: none;
+  }
+}
+
+.collab-grid {
+  padding: 4rem 0;
 }
 
 .closing {
@@ -263,6 +272,11 @@ nav {
     max-width: var(--max-width);
   }
 
+  .col-image {
+    min-width: 350px;
+    max-width: 500px;
+  }
+
   .modal-video-container {
     iframe {
       width: 80vw;
@@ -319,6 +333,7 @@ nav {
       grid-row: 1;
 
       svg {
+        display: block;
         width: 10rem;
         height: 10rem;
       }
