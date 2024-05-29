@@ -192,8 +192,12 @@ nav {
 
   padding: 4rem 0;
 
+  .col:has(svg) {
+    display: flex;
+    justify-content: center;
+  }
+
   svg {
-    margin: auto;
     width: 5rem;
     height: 5rem;
   }
