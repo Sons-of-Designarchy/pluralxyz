@@ -129,7 +129,7 @@ nav {
 .col-image {
   position: relative;
   cursor: pointer;
-  height: 700px;
+  height: 500px;
   width: 100%;
 
   video {
@@ -272,6 +272,8 @@ nav {
   .col-image {
     min-width: 350px;
     max-width: 500px;
+
+    height: 700px;
   }
 
   .modal-video-container {
