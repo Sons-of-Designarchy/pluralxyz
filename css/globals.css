@@ -323,6 +323,10 @@ nav {
       font-size: 4rem;
     }
 
+    svg {
+      display: block;
+    }
+
     .col:nth-child(2) {
       display: flex;
       flex-direction: column;
@@ -331,7 +335,6 @@ nav {
       grid-row: 1;
 
       svg {
-        display: block;
         width: 10rem;
         height: 10rem;
       }
