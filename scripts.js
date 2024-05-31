@@ -10,7 +10,7 @@ function openModal(url) {
   const iframe = document.createElement('iframe');
   iframe.width = '100%';
   iframe.height = '315';
-  iframe.src = url;
+  iframe.src = url + '?&autoplay=1';
   iframe.allow =
     'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
   iframe.allowFullscreen = true;
