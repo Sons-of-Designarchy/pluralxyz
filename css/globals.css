@@ -28,6 +28,10 @@ body {
   text-transform: uppercase;
 }
 
+a {
+  color: var(--orange-500);
+}
+
 .container {
   margin: auto;
   padding: 1rem;
